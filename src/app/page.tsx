@@ -1,3 +1,4 @@
+import Icon from "@/components/Icon";
 import { IconStack2 } from "@tabler/icons-react";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
         <h2 className="font-bold text-lg">It's Luthfi</h2>
       </nav>
       <main className="p-4">
-        <header className="grid grid-cols-2 gap-4 items-center text-primary mb-12">
+        <header className="grid grid-cols-2 gap-4 items-center text-primary mb-12 ">
           <div className="h-40 w-40 rounded-full bg-primary/30"></div>
           <h1 className="text-xl">Hi, I'm <br/><span className="font-bold">Muhammad Luthfi Fahrezi</span></h1>
           <p className="col-span-2 text-xl mt-4">
@@ -26,6 +27,9 @@ export default function Home() {
             <IconStack2 size={32} />
             <span className="font-bold">Stacks</span>
           </h4>
+          {["react", "nextjs", "tailwind"].map((name, index) => (
+            <Icon key={index} name={name} />
+          ))}
         </div>
       </main>
     </div>
