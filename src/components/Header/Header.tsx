@@ -1,10 +1,7 @@
-import { useRef } from 'react';
 import styles from './Header.module.scss';
-import { motion, useScroll } from 'motion/react';
+import { motion } from 'motion/react';
 
 const Header = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll();
   const translations: { [key: string]: string } = {
     en: 'Hi, I\'m',
     es: 'Hola, soy',
@@ -25,7 +22,7 @@ const Header = () => {
       <div className={styles.header__description}>
         <h1>
           <div>
-            <ul style={{ "--length": translationKeys.length }}>
+            <ul style={{ "--length": translationKeys.length } as React.CSSProperties}>
               {[...translationKeys, ...translationKeys].map((key, index) => (
                 <li key={index}>{translations[key]}</li>
               ))}
