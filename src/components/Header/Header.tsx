@@ -1,7 +1,8 @@
 import styles from './Header.module.scss';
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 
 const Header = () => {
+  const { scrollYProgress } = useScroll();
   const translations: { [key: string]: string } = {
     en: 'Hi, I\'m',
     es: 'Hola, soy',
@@ -16,6 +17,7 @@ const Header = () => {
   };
   
   const translationKeys = Object.keys(translations);
+  const y = useTransform(() => scrollYProgress.get() * 1000);
 
   return (
     <header className={styles.header}>
@@ -36,7 +38,7 @@ const Header = () => {
         <p>Experienced and passionate Front-end Developer with more than 4 years of expertise. Enjoy challenges, embraces learning, and adapts easily.</p>
       </div>
       <div className={styles.header__image}>
-        <motion.img src="/assets/me.png" alt="me" />
+        <motion.img src="/assets/me.png" alt="me" style={{ y }} />
       </div>
     </header>
   )

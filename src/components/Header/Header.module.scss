@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 25vh;
+  height: 50vh;
 }
 
 .header__description {
@@ -14,7 +15,7 @@
       overflow: hidden;
 
       ul {
-        animation: slideUp calc(var(--length) * 2s) ease-in-out infinite;
+        animation: slideUp calc(var(--length) * 2s) cubic-bezier(.58,.18,.52,.96) infinite;
         li {
           display: block;
           font-weight: 400;
@@ -45,20 +46,6 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-
-  // aspect-ratio: 1 / 1;
-  // border: solid 2px #000;
-  // border-radius: 50%;
-  // flex-shrink: 1;
-  // height: fit-content;
-  // max-width: 400px;
-  // min-width: 30%;
-  // overflow: hidden;
-  // position: relative;
-  // text-align: center;
-  // background: url('/assets/me.png');
-  // background-size: cover;
-  // background-position-y: 40%;
 
   img {
     width: 100%;

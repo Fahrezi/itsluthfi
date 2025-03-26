@@ -1,13 +1,13 @@
 .education {
-  display: flex;
-  gap: 2rem;
-  margin-top: 8rem;
-  position: relative;
+  // display: flex;
+  // gap: 2rem;
+  // margin-top: 8rem;
+  // position: relative;
 
   &__title {
     font-size: 2rem;
     font-weight: 600;
-    width: 40%;
+    // width: 40%;
     position: relative;
 
     h3 {
@@ -27,13 +27,24 @@
       border-radius: 1.5rem;
       position: relative;
 
-      span {
+      strong {
         display: inline-block;
-        margin-bottom: 1rem;
+        padding: 4px 8px;
+        border: solid 1px #2b53ca;
+        border-radius: 0.25rem;
+        margin-top: -1.25rem;
+        transform: translateY(-20px);
+        background-color: #003eff;
+        color: white;
+
+        span {
+          color: #ff3f3f;
+        }
       }
       p {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
+        margin-bottom: 0.5rem;
       }
     }
   }

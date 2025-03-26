@@ -1,13 +1,13 @@
 .working {
-  display: flex;
-  gap: 2rem;
-  margin-top: 8rem;
-  position: relative;
+  // display: flex;
+  // gap: 2rem;
+  // margin-top: 8rem;
+  // position: relative;
 
   &__title {
     font-size: 2rem;
     font-weight: 600;
-    width: 40%;
+    // width: 40%;
     position: relative;
 
     h3 {
@@ -18,6 +18,28 @@
 
   &__detail {
     flex: 1;
+
+    h3.working__header {
+      text-transform: capitalize;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      font-size: 20px;
+      display: inline-block;
+      border-radius: 4px;
+      padding: 4px 8px;
+      border: solid 2px;
+
+      &--fulltime {
+        background-color: rgb(52, 212, 52);
+        border-color: #38a516;
+      }
+
+      &--others {
+        background-color: rgb(241, 152, 17);
+        border-color: #f57824;
+      }
+
+    }
   }
 
   &__list-working {

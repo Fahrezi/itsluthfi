@@ -1,74 +1,74 @@
 export const STACKS = [
   {
-    icon: '',
-    title: 'HTML'
+    title: 'HTML',
+    icon: '/assets/stack-icons-light/html5.png',
   },
   {
-    icon: '',
-    title: 'CSS'
+    title: 'CSS',
+    icon: '/assets/stack-icons-light/css3.png',
   },
   {
-    icon: '',
-    title: 'JavaScript'
+    title: 'JavaScript',
+    icon: '/assets/stack-icons-light/js.png',
   },
   {
-    icon: '',
-    title: 'TypeScript'
+    title: 'TypeScript',
+    icon: '/assets/stack-icons-light/typescript.png',
   },
   {
-    icon: '',
-    title: 'PHP'
+    title: 'PHP',
+    icon: '/assets/stack-icons-light/php.png',
   },
   {
-    icon: '',
-    title: 'Node JS'
+    title: 'Node JS',
+    icon: '/assets/stack-icons-light/nodejs.png',
   },
   {
-    icon: '',
-    title: 'React JS'
+    title: 'React JS',
+    icon: '/assets/stack-icons-light/reactjs.png',
   },
   {
-    icon: '',
-    title: 'Next JS'
+    title: 'Next JS',
+    icon: '/assets/stack-icons-light/nextjs2.png',
   },
   {
-    icon: '',
-    title: 'SCSS'
+    title: 'SCSS',
+    icon: '/assets/stack-icons-light/sass.png',
   },
   {
-    icon: '',
-    title: 'Redux'
+    title: 'Redux',
+    icon: '/assets/stack-icons-light/redux.png',
   },
   {
-    icon: '',
-    title: 'Angular JS'
+    title: 'Angular JS',
+    icon: '/assets/stack-icons-light/angular.png',
   },
   {
-    icon: '',
-    title: 'Astro JS'
+    title: 'Astro JS',
+    icon: '/assets/stack-icons-light/astro.png',
   },
   {
-    icon: '',
-    title: 'Bootstrap'
+    title: 'Bootstrap',
+    icon: '/assets/stack-icons-light/bootstrap5.png',
   },
   {
-    icon: '',
-    title: 'Vue JS'
+    title: 'Vue JS',
+    icon: '/assets/stack-icons-light/vuejs.png',
   },
   {
-    icon: '',
-    title: 'Wordpress'
+    title: 'Wordpress',
+    icon: '/assets/stack-icons-light/wordpress.png',
   },
   {
-    icon: '',
-    title: 'Figma'
+    title: 'Figma',
+    icon: '/assets/stack-icons-light/figma.png',
   },
   {
-    icon: '',
-    title: 'Jest'
+    title: 'Jest',
+    icon: '/assets/stack-icons-light/jest.png',
   },
   {
-    icon: '',
-    title: 'Git'
+    title: 'Git',
+    icon: '/assets/stack-icons-light/git.png',
   },
 ];

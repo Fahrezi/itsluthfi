@@ -1,0 +1,13 @@
+.present-section {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem;
+  margin-top: 12rem;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+  }
+}

@@ -1,3 +1,4 @@
+import { motion } from 'motion/react';
 import styles from './Education.module.scss';
 
 const EDUCATION = [
@@ -21,14 +22,11 @@ const Education = () => {
   const currentYear = new Date().getFullYear();
   return (
     <section className={styles.education}>
-      <div className={styles.education__title}>
-        <h3>Education</h3>
-      </div>
       <ul className={styles.education__detail}>
         {
           EDUCATION.map((item, index) => (
             <li className='' key={index}>
-              <span>{item.yearStart} - {item.yearEnd}{item.yearEnd > currentYear ? '*' : ''}</span>
+              <motion.strong initial={{ y: -40 }} whileInView={{ y: -20 }} transition={{ delay: 0.3 * (index + 1), ease: "backInOut", bounce: 1 }} viewport={{ once: true }}>{item.yearStart} - {item.yearEnd}<span>{item.yearEnd > currentYear ? '*' : ''}</span></motion.strong>
               <p>{item.institution}, {item.major}</p>
               <p>{item.title}</p>
             </li>

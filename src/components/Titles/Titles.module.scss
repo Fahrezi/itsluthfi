@@ -1,0 +1,16 @@
+.titles {
+  display: flex;
+  overflow: hidden;
+  position: sticky;
+  top: 32px;
+  height: fit-content;
+
+  h2 {
+    flex: 1 0 100%;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    word-wrap: break-word;
+    width: 100%;
+  }
+}
