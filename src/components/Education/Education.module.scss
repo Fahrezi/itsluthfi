@@ -27,18 +27,23 @@
       border-radius: 1.5rem;
       position: relative;
 
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
       strong {
         display: inline-block;
         padding: 4px 8px;
-        border: solid 1px #2b53ca;
+        border: solid 2px #2b53ca;
         border-radius: 0.25rem;
         margin-top: -1.25rem;
         transform: translateY(-20px);
-        background-color: #003eff;
-        color: white;
+        background-color: #90abfd;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
 
         span {
-          color: #ff3f3f;
+          color: #ff6161;
         }
       }
       p {

@@ -1,13 +1,31 @@
 .present-section {
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  gap: 2rem;
-  margin-top: 12rem;
+  margin-top: 8rem;
   position: relative;
 
   &__content {
     display: flex;
     flex-direction: column;
-    row-gap: 10rem;
+    row-gap: 5rem;
+
+    & > div {
+      padding-top: 8rem;
+
+      &:first-of-type {
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .present-section {
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 2rem;
+
+    &__content {
+      row-gap: 10rem;
+    }
   }
 }

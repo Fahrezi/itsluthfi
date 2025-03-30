@@ -23,6 +23,7 @@ const Working = () => {
                         <span>{item.timeStart} - {item.timeFinish}</span>
                       </div>
                       <p>{item.description}</p>
+                      <button>detail!</button>
                     </li>
                   ))
                 }

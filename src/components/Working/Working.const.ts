@@ -1,10 +1,16 @@
 interface workingData {
-  company: string,
-  image: string,
-  title: string,
-  timeStart: string,
-  timeFinish: string,
-  description: string
+  company: string;
+  image: string;
+  title: string;
+  timeStart: string;
+  timeFinish: string;
+  description: string;
+  detail?: detailWorkingData;
+}
+
+interface detailWorkingData {
+  description: string;
+  achievments: string[];
 }
 
 interface workingDataList {
@@ -19,7 +25,14 @@ export const WORKING_DATA: workingDataList = {
       title: 'Frontend Developer',
       timeStart: '02/2025',
       timeFinish: 'present',
-      description: 'Developed  Super Apps Projects with React JS with Vite.',
+      description: 'Developed  Super Apps Projects with Rea ct JS with Vite.',
+      detail: {
+        description: 'Developed  Super Apps Projects with React JS with Vite.',
+        achievments: [
+          "Involved in the preparation of a dynamic project repository using Vite, ensuring scalability and maintainability.",
+          "Developed a Progressive Web App (PWA) repository to enhance performance and user experience."
+        ]
+      }
     },
     {
       company: 'USU',
@@ -56,7 +69,7 @@ export const WORKING_DATA: workingDataList = {
       description: 'Developed Event Websites with Next JS Monolith.',
     },
     {
-      company: 'YMB Furniture - UI/UX, Front-end Developer ',
+      company: 'YMB Furniture',
       image: 'https://imageplaceholder.net/50x30',
       title: 'UI/UX, Frontend Developer',
       timeStart: '05/2024',

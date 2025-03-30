@@ -39,7 +39,7 @@ const PresentSection: React.FC = () => {
   }, [sectionRefs]);
  
   return (
-    <section className={styles['present-section']}>
+    <section id="present-section" className={styles['present-section']}>
       <Titles listTitle={listTitle} listObserve={listOnView} />
       <div className={styles['present-section__content']}>
         {

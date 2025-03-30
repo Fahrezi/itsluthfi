@@ -37,9 +37,10 @@ const Header = () => {
         </p>
         <p>Experienced and passionate Front-end Developer with more than 4 years of expertise. Enjoy challenges, embraces learning, and adapts easily.</p>
       </div>
-      <div className={styles.header__image}>
+      <motion.div className={styles.header__image} style={{ backgroundPositionY: y ?? 8 }}></motion.div>
+      {/* <div className={styles.header__image}>
         <motion.img src="/assets/me.png" alt="me" style={{ y }} />
-      </div>
+      </div> */}
     </header>
   )
 }

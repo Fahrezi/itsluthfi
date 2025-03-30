@@ -1,11 +1,10 @@
 .stack-icon {
   border: solid 2px #000;
   border-radius: 1rem;
-  max-width: 200px;
   aspect-ratio: 1 / 1;
   height: auto;
   overflow: hidden;
-  flex: 0 0 calc(20% - 16px);
+  flex: 0 0 calc(33% - 16px);
 
   h3, span {
     width: 100%;
@@ -33,3 +32,17 @@
     font-weight: 600;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .stack-icon {
+    flex: 0 0 calc(25% - 16px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .stack-icon {
+    flex: 0 0 calc(20% - 16px);
+  }
+}
+
+

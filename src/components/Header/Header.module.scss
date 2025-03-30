@@ -1,9 +1,8 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   gap: 2rem;
-  margin-top: 25vh;
-  height: 50vh;
+  margin-top: 7vh;
 }
 
 .header__description {
@@ -37,31 +36,33 @@
 
 .header__image {
   aspect-ratio: 1 / 1;
+  background: url("/assets/me.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
   border: solid 2px #000;
   border-radius: 50%;
-  flex-shrink: 1;
-  height: fit-content;
   max-width: 400px;
   min-width: 30%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
+  width: 300px;
+  margin: 0 auto;
 
   img {
     width: 100%;
-    position: absolute;
-    left: 0;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 768px) {
   .header {
-    flex-direction: column-reverse;
-
+    margin-top: 25svh;
+    height: 50svh;
+    flex-direction: row;
+    justify-content: space-between;
 
     .header__image {
-      width: 300px;
-      margin: 0 auto;
+      height: fit-content;
+      flex-shrink: 1;
     }
   }
 }
