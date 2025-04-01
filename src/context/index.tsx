@@ -5,19 +5,24 @@ type Props = {
 }
 
 type DetailContextType = {
-  detail: string,
-  setDetail: React.Dispatch<React.SetStateAction<string>>
+  detail: string[] | null,
+  setDetail: React.Dispatch<React.SetStateAction<string[] | null>>
+  title: string | null,
+  setTitle: React.Dispatch<React.SetStateAction<string | null>>
 }
 
 export const DetailContext = createContext<DetailContextType>({
-  detail: "",
-  setDetail: () => {}
+  detail: null,
+  setDetail: () => {},
+  title: "",
+  setTitle: () => {}
 });
 
 const Context: React.FC<Props> = ({ children }) => {
-  const [detail, setDetail] = useState<string>("");
+  const [title, setTitle] = useState<string | null>(null);
+  const [detail, setDetail] = useState<string[] | null>(null);
   return (
-    <DetailContext.Provider value={{ detail, setDetail }}>
+    <DetailContext.Provider value={{ detail, setDetail, title, setTitle }}>
       {children}
     </DetailContext.Provider>
   )

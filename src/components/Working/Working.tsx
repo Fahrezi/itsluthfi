@@ -1,7 +1,10 @@
 import styles from './Working.module.scss';
 import { WORKING_DATA } from './Working.const';
+import { useContext } from 'react';
+import { DetailContext } from '../../context';
 
 const Working = () => {
+  const { setDetail, setTitle } = useContext(DetailContext);
   const workingKeys: string[] = Object.keys(WORKING_DATA);
   return (
     <section className={styles.working}>
@@ -23,7 +26,10 @@ const Working = () => {
                         <span>{item.timeStart} - {item.timeFinish}</span>
                       </div>
                       <p>{item.description}</p>
-                      <button>detail!</button>
+                      <button onClick={() => {
+                        setTitle(item.company);
+                        setDetail(item.detail ?? []);
+                      }}>detail!</button>
                     </li>
                   ))
                 }
