@@ -79,15 +79,24 @@ const DynamicIsland = () => {
                 <li key={index}>{item}</li>
             ))}
           </ul>
-          <div
+          <motion.div
+            whileHover="hovered"
             onClick={() => {
               setDetail(null);
               setTitle("");
             }}
           >
             <span>Hide</span>
-            <span style={{ rotate: "90deg" }}><ArrowLeft width={16} height={16} /></span>
-          </div>
+            <motion.div
+              initial={{ y: "-30%" }}
+              variants={{ hovered: { y: "30%" } }}
+              transition={{ duration: 0.6, ease: "circInOut" }}
+              style={{ display: "flex", flexDirection: "column", gap: "0.5rem", transform: "translateY(-30%)" }}
+            >
+              <span style={{ rotate: "90deg" }}><ArrowLeft width={16} height={16} /></span>
+              <span style={{ rotate: "90deg" }}><ArrowLeft width={16} height={16} /></span>
+            </motion.div>
+          </motion.div>
         </motion.div>
       ) : (
         <motion.div animate={{ x: isActive ? "0%" : "-100%" }} transition={{ duration: 0.5, ease: "circInOut" }}>
